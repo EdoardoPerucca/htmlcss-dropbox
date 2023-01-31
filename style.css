@@ -11,13 +11,32 @@ body {
 * hr {
     color: lightgrey;
     border: 0.1;
-    
-    
 }
 
 * ul {
     list-style-type: none;
 }
+
+* header a {
+    text-decoration: none;  
+    color: black;
+}
+
+.container-centered {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-centered-header-footer {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
 
 header .header-inner {
     display: flex;
@@ -25,34 +44,34 @@ header .header-inner {
     align-items: center;
     width: 100%;
     height: 80px;
-    background-color: brown;
     padding-left: 10px;
-    padding-right: 10px;
-    
+    padding-right: 10px; 
 }
 
 header .header-inner .nav-container-left {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    width: 300px;
-    background-color: blue;
+    gap: 30px;
+    width: 600px;
+    align-items: center;  
 }
 
 header .header-inner .nav-container-left .list-nav-left ul {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    
+    gap: 20px;  
 }
 
 header .header-inner .nav-container-right {
     display: flex;
-    flex-direction: row-reverse;
-    gap: 20px;
-    width: 300px;
-    background-color: blue;
+    flex-direction: row-reverse;  
+    width: 600px;
+    align-items: center;   
+}
 
+header .header-inner .nav-container-right .button-nav-right button {
+    margin-left: 20px;
+    background-color: #0061ff;
 }
 
 header .header-inner .nav-container-right .list-nav-right ul {
@@ -60,34 +79,40 @@ header .header-inner .nav-container-right .list-nav-right ul {
     flex-direction: row;
     gap: 20px;
     list-style-type: none;
-    
 }
 
-.container-centered {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-
+header button {
+    min-width: 70px;
+    min-height: 35px;
+    border: none;
+    color: white;
 }
 
-* button {
-    width: 200px;
-    height: 35px;
-    background-color: ;
+
+
+
+
+
+main button {
+    width: 230px;
+    height: 40px;
+    background-color: #0061ff;
+    border: none;
+    color: white;
 }
 
 main .title-section {
-    padding-top: 50px;
-    margin-bottom: 100px;
+    padding-top: 100px;
+    margin-bottom: 150px;
 }
 
 main .title-section {
-    background-color: blue;
+    background-color: #b4d0e7;
 }
 
 h1 {
-    font-size: 50px;
-    padding-bottom: 50px;
+    font-size: 80px;
+    padding-bottom: 70px;
 }
 
 main .title-section .text-title {
@@ -104,24 +129,37 @@ main .title-section .text-title .text-title-inner {
 
 main .title-section .text-title .img-title-inner {
     display: flex;
-    min-width: 650px;
-    min-height: 350px;
-    background-color: red;
+    min-width: 800px;
+    min-height: 450px;
     flex-grow: 1;
+    margin-bottom: -70px;
 }
+
+main .title-section .text-title .img-title-inner img {
+    width: 100%;
+}
+
+.fa-arrow-down {
+    font-size: 4em;
+    padding-bottom: 15px;
+}
+
+
+
+
+
 
 main .business {
-    display: flex;
-    justify-content: center;
     padding-bottom: 50px;
-    
 }
 
+main .business h2 {
+    font-size: 2.6em;
+}
 
 main .business .title-business {
     padding-bottom: 50px;
 }
-
 
 main .business .link-business ul {
     display: flex;
@@ -129,17 +167,92 @@ main .business .link-business ul {
     gap: 30px;
 }
 
+
+
+
+
 main .packages {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     padding-bottom: 50px;  
+    gap: 50px;
 }
 
 main .packages .packages-box {   
     min-width: 30%;
-    border: solid 1px lightgrey;  
+    border: solid 1px lightgrey; 
 }
+
+main .packages .packages-box .packages-icon-top {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+main .packages .packages-box .packages-type {
+    padding-top: 40px;
+    padding-left: 30px;
+    width: 90%; 
+}
+
+main .packages .packages-box .packages-type h2 {
+    padding-bottom: 25px;
+}
+
+main .packages .packages-box .packages-type .price {
+    padding-bottom: 20px;
+}
+
+main .packages .packages-box .packages-type .period {
+    padding-bottom: 50px;
+    color: #9da4ac;
+}
+
+main .packages .packages-box .packages-type .packages-icon-inner {
+    display: flex;
+    padding-bottom: 25px;
+    gap: 10px;
+}
+
+main .packages .packages-box button {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+main .packages .packages-box .packages-type .link {
+    margin-bottom: 40px;
+}
+
+main .packages .packages-box .packages-type hr {
+    width: 50px;
+}
+
+main .packages .packages-box .packages-type h3 {
+    padding-top: 50px;
+    padding-bottom: 35px;
+}
+
+main .packages .packages-box .contact {
+    padding-bottom: 85px;
+}
+
+main .packages .packages-box .packages-type .packages-point {
+    padding-bottom: 35px;
+    display: flex;
+    gap: 10px;
+}
+
+main .packages .packages-box .packages-type .packages-point .fa-check {
+    color: #0d72ff;
+}
+
+
+
+
+
 
 main .enterprise {
     border: solid 1px lightgrey;
@@ -197,7 +310,94 @@ main .operations .box-operations {
 }
 
 main .dropbox-business {
-    max-width: 400px;
-    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    min-width: 600px;
+    gap: 50px;
+    padding-bottom: 100px;
+
 }
 
+
+
+main .square .square-left {
+    width: calc(100vw / 3);
+    height: calc(100vh / 3);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: brown;
+    
+}
+
+main .square {
+    display: flex;
+}
+
+main .square .square-inner {
+    width: 50%;
+    height: 50%;
+} 
+
+main .square .square-center {
+    flex-grow: 1;
+}
+
+main .square .square-right {
+    width: calc(100vw / 3);
+    height: calc(100vh / 3);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue; 
+}
+
+
+main .footer-square {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+main .footer-square .footer-square-right {
+    min-width: 70%;
+}
+
+
+main .faq {
+    padding-bottom: 100px;
+}
+
+main .faq .question-faq {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+main .faq .question-faq > p {
+    width: 95%;
+}
+
+
+footer {
+    background-color: black;
+}
+
+
+footer .footer-box {
+    display: flex;
+  
+}
+
+footer .footer-box .list-footer-box {
+    width: calc(100% / 5);
+    color: white;
+}
+
+footer .footer-box .list-footer-box ul li {
+    line-height: 40px;
+}
+
+footer .footer-box .list-footer-box ul li:first-child {
+    color: white;
+    line-height: 100px;
+    
+}
