@@ -257,28 +257,57 @@ main .packages .packages-box .packages-type .packages-point .fa-check {
 main .enterprise {
     border: solid 1px lightgrey;
     margin-bottom: 150px;
+    margin-bottom: 150px;
 }
 
 main .enterprise .enterprise-icon-top {
     display: flex;
     justify-content: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 12px;
+    padding-top: 12px;
     gap: 5px;
 }
+
+main .enterprise .enterprise-bottom {
+    display: flex;
+    padding-top: 35px;
+    padding-left: 30px;
+}
+
+main .enterprise .enterprise-bottom .enterprise-left h3 {
+    padding-bottom: 20px;
+}
+
+main .enterprise .enterprise-bottom .enterprise-left .office {
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+main .enterprise .enterprise-bottom .enterprise-left p {
+    padding-bottom: 30px;
+    padding-right: 50px;
+}
+
+main .enterprise .enterprise-bottom .enterprise-right {
+    padding-right: 30px;
+}
+
+
+
 
 main .partner {
     display: flex;
     gap: 40px;
-    padding-bottom: 150px;
+    padding-bottom: 160px;
 }
 
 main .partner .partner-box-left {
     display: flex;
-    min-width: 650px;
-    min-height: 350px;
-    background-color: red;
-    
+    min-width: 600px;
+}
+
+main .partner .partner-box-left img {
+    width: 100%;
 }
 
 main .partner .partner-box-right {
@@ -289,10 +318,31 @@ main .partner .partner-box-right {
     padding-top: 50px; 
 }
 
+main .partner .partner-box-right h3 {
+    font-size: 1.5em;
+    padding-bottom: 30px;
+}
+
+main .partner .partner-box-right p {
+    padding-bottom: 30px;
+}
+
+main .partner .partner-box-right button {
+    background-color: white;
+    border: solid 1px black;
+    color: black;
+    max-width: 150px;
+    height: 45px;
+}
+
+
+
+
+
 main .title-operations {
     display: flex;
-    justify-content: center;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
+    font-size: 1.7em;
 }
 
 main .operations {
@@ -300,43 +350,85 @@ main .operations {
     flex-direction: row;
     gap: 40px;
     flex-wrap: wrap;
-    padding-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 main .operations .box-operations {
     max-width: 30%;
     width: auto;
-    background-color: blueviolet;
+    margin-bottom: 70px;
 }
+
+main .operations .box-operations img {
+    width: 100%;
+}
+
+main .operations .box-operations h3 {
+    font-size: 1.5em;
+    padding-bottom: 40px;
+}
+
+
+
 
 main .dropbox-business {
     display: flex;
     flex-direction: column;
-    min-width: 600px;
+    max-width: 800px;
     gap: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
+}
 
+main .dropbox-business h2 {
+    font-size: 3em;
+    padding-bottom: 70px;
 }
 
 
 
-main .square .square-left {
-    width: calc(100vw / 3);
-    height: calc(100vh / 3);
-    display: flex;
-    flex-wrap: wrap;
-    background-color: brown;
-    
-}
+
 
 main .square {
     display: flex;
 }
 
+main .square .square-left {
+    width: calc(100vw / 3);
+    height: calc(100vh / 2);
+    display: flex;
+    flex-wrap: wrap;
+}
+
 main .square .square-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: 50%;
 } 
+
+main .square .inner-1 {
+    background-color: #a2d39b;
+}
+
+main .square .inner-2 {
+    background-color: #61082b;
+}
+
+main .square .inner-3 {
+    background-color:#0093ce;
+}
+
+main .square .inner-4 {
+    background-color: #ff1c1c;
+}
+
+main .square .square-inner img {
+    width: 50%;
+    height: 50%;
+}
+
+
 
 main .square .square-center {
     flex-grow: 1;
@@ -344,11 +436,14 @@ main .square .square-center {
 
 main .square .square-right {
     width: calc(100vw / 3);
-    height: calc(100vh / 3);
+    height: calc(100vh / 2);
     display: flex;
     flex-wrap: wrap;
     background-color: blue; 
 }
+
+
+
 
 
 main .footer-square {
