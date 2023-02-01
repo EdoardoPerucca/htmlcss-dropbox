@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 * hr {
@@ -202,6 +202,10 @@ main .packages .packages-box .packages-type {
     width: 90%; 
 }
 
+main .packages .packages-box .packages-type .packages-top {
+    min-height: 420px;
+}
+
 main .packages .packages-box .packages-type h2 {
     padding-bottom: 25px;
 }
@@ -222,7 +226,6 @@ main .packages .packages-box .packages-type .packages-icon-inner {
 }
 
 main .packages .packages-box button {
-    margin-top: 25px;
     margin-bottom: 35px;
     width: 100%;
 }
