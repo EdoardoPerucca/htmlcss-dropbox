@@ -122,17 +122,17 @@ main .title-section .text-title {
 main .title-section .text-title .text-title-inner {
     display: flex;
     flex-direction: column;
-    width: auto;
-    height: auto;
+    width: 30%;
+    
     justify-content: space-between;
 }
 
 main .title-section .text-title .img-title-inner {
     display: flex;
-    min-width: 800px;
-    min-height: 450px;
+    width: 70%;
+    
     flex-grow: 1;
-    margin-bottom: -70px;
+    margin-bottom: -80px;
 }
 
 main .title-section .text-title .img-title-inner img {
@@ -302,8 +302,8 @@ main .partner {
 }
 
 main .partner .partner-box-left {
-    display: flex;
-    min-width: 600px;
+    
+    width: 70%;
 }
 
 main .partner .partner-box-left img {
@@ -314,6 +314,7 @@ main .partner .partner-box-right {
     display: flex;
     flex-direction: column;
     align-content: center;
+    width: 30%;
     gap: 15px;
     padding-top: 50px; 
 }
@@ -394,7 +395,7 @@ main .square {
 
 main .square .square-left {
     width: calc(100vw / 3);
-    height: calc(100vh / 2);
+    height: calc(100vw / 3);
     display: flex;
     flex-wrap: wrap;
 }
@@ -426,6 +427,7 @@ main .square .inner-4 {
 main .square .square-inner img {
     width: 50%;
     height: 50%;
+    filter: invert(1);
 }
 
 
@@ -436,7 +438,7 @@ main .square .square-center {
 
 main .square .square-right {
     width: calc(100vw / 3);
-    height: calc(100vh / 2);
+    height: calc(100vw / 3);
     display: flex;
     flex-wrap: wrap;
     background-color: blue; 
