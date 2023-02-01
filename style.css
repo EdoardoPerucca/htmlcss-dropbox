@@ -34,6 +34,9 @@ body {
     margin-right: auto;
 }
 
+* button {
+    cursor: pointer;
+}
 
 
 
@@ -45,7 +48,9 @@ header .header-inner {
     width: 100%;
     height: 80px;
     padding-left: 10px;
-    padding-right: 10px; 
+    padding-right: 10px;
+    position: fixed; 
+    background-color: white;
 }
 
 header .header-inner .nav-container-left {
@@ -94,7 +99,7 @@ header button {
 
 
 main button {
-    width: 230px;
+    width: 250px;
     height: 40px;
     background-color: #0061ff;
     border: none;
@@ -276,6 +281,7 @@ main .enterprise .enterprise-bottom {
 
 main .enterprise .enterprise-bottom .enterprise-left h3 {
     padding-bottom: 20px;
+    font-size: 1.7em;
 }
 
 main .enterprise .enterprise-bottom .enterprise-left .office {
@@ -482,20 +488,48 @@ main .square .square-inner img {
 
 
 
+main .square-bottom {
+    background-color: #b4d0e7;
+}
 
-main .footer-square {
+main .square-bottom .footer-square {
     display: flex;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    margin-bottom: 150px;
 }
 
-main .footer-square .footer-square-right {
-    min-width: 70%;
+main .square-bottom .footer-square .footer-square-left {
+    width: 60%;
+    font-size: 2em;
+    line-height: 60px;
 }
+
+main .square-bottom .footer-square .footer-square-left h2 {
+    color: #61082b;
+}
+
+main .square-bottom .footer-square .footer-square-right {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+}
+
+main .square-bottom .footer-square .footer-square-right button {
+    background-color: white;
+    color: black;
+}
+
+
 
 
 main .faq {
     padding-bottom: 100px;
+}
+
+main .title-faq h2 {
+    padding-bottom: 70px;
+    font-size: 2.5em;
 }
 
 main .faq .question-faq {
@@ -509,14 +543,17 @@ main .faq .question-faq > p {
 }
 
 
+
+
+
 footer {
     background-color: black;
 }
 
-
 footer .footer-box {
     display: flex;
-  
+    padding-bottom: 120px;
+    padding-top: 100px;
 }
 
 footer .footer-box .list-footer-box {
@@ -525,11 +562,22 @@ footer .footer-box .list-footer-box {
 }
 
 footer .footer-box .list-footer-box ul li {
+    color: white;
     line-height: 40px;
 }
 
-footer .footer-box .list-footer-box ul li:first-child {
+footer .footer-box .list-footer-box li:first-child {
+    font-size: 1.6em;
+    padding-bottom: 40px;
+    font-weight: 600;
+}
+
+footer hr {
+    width: 120px;
+}
+
+footer .footer-language {
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: white;
-    line-height: 100px;
-    
 }
